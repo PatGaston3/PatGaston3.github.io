@@ -50,7 +50,48 @@
   <h5>
     <p>When would you use '=' vs '==' vs '.equals'? Explain what each of these does and in which cases you should use them?</p>
   </h5>
-    <p><em>Answer here</em></p>
+    <p>Roughly, we can describe ‘=‘ as an <strong>assignment</strong>, ‘==‘ as an <strong>operator</strong> and ‘.equals()’ as a <strong>method</strong>.</p>
+
+<ul>
+	<p>
+	’=‘ is used to <strong>assign</strong> a value to a variable. In Java programming, you must first declare a variable before you assign a method to it. 	Assigning a value to a variable as also known as <em>initializing</em> the variable.
+
+	The syntax for declaring a variable comes with it’s data type (int) followed by the variable name (x). 
+		…
+		> int x; 
+
+	Assigning a value can be done on the same line as declaring a variable. This method can be used for saving space, and sometimes more readability, 	in a program by declaring and assigning a value in the beginning of the program.
+		…
+		-> int x = 1; 
+	</p>
+</ul>
+
+<ul>
+	<p>	
+	‘==‘ is an <strong>operator</strong> that compares the value of two objects to see if they refer to the same string instance. It used to compare whether two operands are equal or not. You can use this operator to compare primitive types (int, char, bool) or object references (String string1 = new String( “Value” ). If the value of both primitive instance’s are equal, the result of the boolean (true or false expression) would be “true”:
+		…
+		int a = 8;
+		int b = 9-1; 
+		int c = 4;
+		
+		( a == b ) // True
+		( a == c ) // False
+	</p>
+</ul>
+
+
+<ul>
+	<p>
+	‘.equals().’ is a <strong>method</strong> that compares the “value” inside a string instance. This method does not compare about object reference 	and only compares 	values of the instances. The only comparison made is that the array of characters are in the same order. This method also 		returns a boolean value as a result, returning “true” if the characters are in the same order and “false” if otherwise.
+		…
+		String string1 =  “Patrick Gaston”;
+		String string2 =  “Pat Gaston”;
+		String string3 =  “Patrick Gaston”;
+
+		string1.equals(string2); // False
+		string1.equals(string3); // True
+	</p>
+</ul>
   <h5>
     <p>What does it mean to 'cast a double to an int'? Give an example of when you would do this and explain what is happening?</p>
   </h5>
