@@ -107,21 +107,22 @@
 	We can think of ‘cast’ as being synonymous with ‘push’ in this instance. When we say we are ‘<em>casting</em> a double to an int’, essentially we are taking the value stored in <strong>double</strong> (a decimal value; i.e. 3.05) and storing it in an int (whole number; i.e. 3). In this process, the decimal is implicitly dropped and rounded <em>down</em> regardless of decimal value. Casting a double to an int can be done in multiple ways:
 	</p>
 
+	<ul>
+		<p>	Casting in one step:		</p>
 
-	<p>	Casting in one step:		</p>
-
-	<p>	…					</p>
-	<p>	int x = (int)(11.26); // This will return:  x = 11		</p>
+		<p>	…					</p>
+		<p>	int x = (int)(11.26); // This will return:  x = 11		</p>
 
 
-	<p>	casting in 2 steps:	</p>
+		<p>	casting in 2 steps:	</p>
 
-	<p>	…				</p>
-	<p>	double b = 3.4;		</p>
-	<p>	double c = 3.9;		</p>
+		<p>	…				</p>
+		<p>	double b = 3.4;		</p>
+		<p>	double c = 3.9;		</p>
 
-	<p>	int x = (int)(b); // This will return: x = 3		</p>
-	<p>	int y = (int)(c); // This will ALSO return: x = 3	</p>
+		<p>	int x = (int)(b); // This will return: x = 3		</p>
+		<p>	int y = (int)(c); // This will ALSO return: x = 3	</p>
+	</ul>
     
  <!-- Question 3 -->
   <h5>
